@@ -1,0 +1,8 @@
+node_modules/
+.next
+*-error.log
+coverage/
+.now
+
+
+!/src/config/firebaseConfig.json
