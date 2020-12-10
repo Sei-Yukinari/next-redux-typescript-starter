@@ -6,6 +6,7 @@ type Props = {
 }
 
 export const LogOutButton: React.FC<Props> = ({ onClick }) => {
+  // @ts-ignore
   return <Button onClick={onClick}>ログアウト</Button>
 }
 

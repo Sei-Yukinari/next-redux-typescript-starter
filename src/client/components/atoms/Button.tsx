@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react'
 import { Button as AntButton } from 'antd'
 import styled from '@emotion/styled'
+import { ButtonType } from 'antd/es/button'
+import { SizeType } from 'antd/lib/config-provider/SizeContext'
 
 type Props = {
-  type?: string
-  size?: string
-  onClick?: Function
+  type?: ButtonType
+  size?: SizeType
+  onClick?: React.MouseEventHandler<HTMLElement>
   children: ReactNode
   disabled?: boolean
 }

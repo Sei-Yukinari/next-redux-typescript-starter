@@ -33,6 +33,8 @@ export async function loginWithEmailAndPassword(
 }
 
 // eslint-disable-next-line no-underscore-dangle
+// @ts-ignore
+// eslint-disable-next-line no-underscore-dangle
 globalThis._app = firebase
 export async function logout() {
   try {

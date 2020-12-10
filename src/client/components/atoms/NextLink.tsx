@@ -1,5 +1,5 @@
 import React from 'react'
-import * as nextLink from 'next/link'
+import Link from 'next/link'
 import styled from '@emotion/styled'
 
 type Props = {
@@ -15,8 +15,8 @@ const StyledButton = styled.button({
   backgroundColor: '#fff',
 })
 
-export const Link: React.FC<Props> = ({ href, buttonText }) => (
-  <nextLink href={href}>
+export const NextLink: React.FC<Props> = ({ href, buttonText }) => (
+  <Link href={href}>
     <StyledButton type="button">{buttonText}</StyledButton>
-  </nextLink>
+  </Link>
 )
